@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<!-- Author: Arshad shah -->
+
+<!--Start of page-->
+
+<html lang="en">
+  <!--start of head-->
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--google verification-->
+    <meta
+      name="google-site-verification"
+      content="vxNkAGUTtzyvkugZFN_HhgOJwIo-J7RnNqIa1bR_rvs"
+    />
+
+    <!--Theme color meta tag-->
+    <meta name="theme-color" content="#000000" />
+
+    <!-- classification -->
+    <meta name="Classification" content="Portfolio" />
+
+    <!-- coverage -->
+    <meta name="coverage" content="Worldwide" />
+    <meta name="distribution" content="Global" />
+
+    <!-- metadata -->
+    <meta
+      name="keywords"
+      content="Arshad shah,arshad shah, arshad,shah, tudublin, college, Software Engineer, website developer, Portfolio"
+    />
+    <meta
+      name="description"
+      content="Arshad shah is a Computer science student who likes to build and design stuff in code for Mobile, Web, Desktop."
+    />
+
+    <!-- owner -->
+    <meta name="author" content="Arshad Shah" />
+    <meta name="owner" content="Arshad Shah" />
+    <meta name="designer" content="Arshad Shah" />
+
+    <!-- robot -->
+    <meta name="robots" content="index,follow" />
+
+    <!-- revised -->
+    <meta name="revised" content="Wednesday, June 9th, 2021, 1:00 pm" />
+
+    <!--favicon for browser tab-->
+    <link rel="icon" href="Assets/images/logo.svg" type="image/x-icon" />
+
+    <link rel="shortcut icon" href="Assets/images/logo.svg" />
+
+    <title>Arshad shah - Portfolio</title>
+
+    <!--normal handmade style sheet for website design-->
+    <link rel="stylesheet" href="Assets/css/style.css" />
+
+    <!--imported stylesheet for icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!--imported style sheet for the font styling of the web page-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Ruda&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- personal scripts -->
+    <script src="./Assets/js-scripts/smoothScroller.js"></script>
+    <script src="./Assets/js-scripts/back-to-top.js"></script>
+    <script src="./Assets/js-scripts/opacity-animation.js"></script>
+    <script type="text/javascript" src="./Assets/js-scripts/logic.js"></script>
+  </head>
+  <!--end of Head section-->
+
+  <!--start of body section-->
+
+  <body>
+    <!--start of header-->
+    <a href="#" id="scroll" style="display: none"><span></span></a>
+
+    <header class="header" id="header">
+      <nav class="navbar">
+        <div class="nameAndLogo">
+          <img src="Assets/images/logo.svg" alt="Website logo" />
+        </div>
+
+        <div class="main-nav">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a class=".nav-link" href="#aboutme">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class=".nav-link" href="#projectsSection">Projects</a>
+            </li>
+            <li class="nav-item">
+              <!-- <a onclick="closeMenu()" rel="noopener" target="_blank" href="Assets/images/ArshadResume.pdf">Resume</a> -->
+              <a
+                class=".nav-link"
+                rel="noopener"
+                target="_blank"
+                href="./Resume.html"
+                >Resume</a
+              >
+            </li>
+          </ul>
+          <button class="mobile-menu" onClick="mobileMenu()">
+            <div class="menu-title">
+              <h4>Menu</h4>
+            </div>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!--end of Header-->
+
+    <!-- image and text for main page intro -->
+    <div class="landingPagetext">
+      <div class="mainText">
+        <div class="content" id="heroContent">
+          <h6>Hi, My Name is</h6>
+          <h1>Arshad Shah.</h1>
+          <h4>Second Year Computer Science Student</h4>
+          <h4>Technological University Dublin, Ireland (TUDublin)</h4>
+
+          <div class="social">
+            <a
+              rel="noopener"
+              target="_blank"
+              href="https://github.com/arshad-shah"
+              ><i data-feather="github"></i
+            ></a>
+            <a
+              rel="noopener"
+              target="_blank"
+              href="https://www.linkedin.com/in/arshadshah"
+              ><i data-feather="linkedin"></i
+            ></a>
+            <a rel="noopener" href="mailto:Shaharshad1999@outlook.com"
+              ><i data-feather="mail"></i
+            ></a>
+          </div>
+
+          <div class="scrollDown">
+            <a href="#aboutme"> <i data-feather="arrow-down"></i> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of text and image for intro -->
+
+    <!-- Introduction aboutme and my picture -->
+    <div class="aboutme" id="aboutme">
+      <h1>About me</h1>
+
+      <div class="row">
+        <!-- column 1 -->
+        <div class="picture">
+          <img src="Assets/images/Picture.png" alt="Picture of arshad" />
+        </div>
+        <!-- column 2 -->
+        <div class="mainPageText">
+          <div>
+            Hello, I'm Arshad. I Like designing and creating stuff for all
+            domains whether it is Mobile, Web, Desktop. My Goal is to make
+            efficient, clean Applications that give an easy and perfect
+            experience.
+
+            <h4>Cerificates And Achievements:</h4>
+            <div>
+              QQI Level 5 Certificate in software Development
+              <a
+                rel="noopener"
+                target="_blank"
+                href="Assets/images/softwareDevelopmentCert.png"
+                ><i data-feather="link"></i
+              ></a>
+              <h5>08/2018 - 08/2019</h5>
+              With Distinction
+              <a
+                rel="noopener"
+                target="_blank"
+                href="Assets/images/level4-5Transcript.png"
+                ><i data-feather="link"></i
+              ></a>
+              <h6>
+                Software Development, Web Development, Algorithms, Software
+                Architecture
+              </h6>
+            </div>
+
+            <h4>Interests:</h4>
+            I like to Read books, Write Computer Programs and learn new Skills.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of introduction and picture section -->
+
+    <!-- Projects section -->
+    <div class="projects" id="projectsSection">
+      <h1>Projects</h1>
+      <div class="grid-container">
+        <!-- card1 -->
+        <div class="grid-item">
+          <div class="item-heading">Portfolio Website</div>
+          <div class="desc">
+            A Portfolio site that contains all the work i have done so far.
+            <br />
+            Includes work from college such as exercises, projects.
+            <br />
+            and also from outside college such as the android app.
+          </div>
+          <div class="languages-used">Languages used:</div>
+          <div class="languages">HTML 5 | CSS 3 | Javascript | jQuery</div>
+          <div class="links">
+            <a
+              rel="noopener"
+              target="_blank"
+              href="https://github.com/arshad-shah/arshad-shah.github.io.git"
+              ><i data-feather="github"></i
+            ></a>
+            <a rel="noopener" href="index.html">
+              <i data-feather="external-link"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- card2 -->
+        <div class="grid-item">
+          <div class="item-heading">Android App Project</div>
+          <div class="desc">
+            <div>Nimaz</div>
+            An app that calculates Muslim Prayer times and displays it in a
+            clean UI.
+            <br />
+            Features are Alarms for each prayer,
+            <br />
+            Tasbeeh counter, Qibla compass, Names of Allah with translation and
+            transliterations
+          </div>
+          <div class="languages-used">Languages used:</div>
+          <div class="languages">Kotlin | Xml</div>
+          <div class="links">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.arshadshah.nimaz&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+            >
+              <img
+                alt="Get it on Google Play"
+                src="Assets/images/google-play-badge.png"
+            /></a>
+          </div>
+        </div>
+
+        <!-- card3 -->
+        <div class="grid-item">
+          <div class="item-heading">Library Booking System</div>
+          <div class="desc">
+            A Library booking system that does account management such as log in
+            register, and password reset, borrowing, returning, fines.
+          </div>
+          <div class="languages-used">Languages used:</div>
+          <div class="languages">
+            HTML 5 | CSS 3 | Javascript | jQuery | PHP | MySQL
+          </div>
+          <div class="links">
+            <a
+              rel="noopener"
+              target="_blank"
+              href="https://github.com/arshad-shah/library_application.git"
+              ><i data-feather="github"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- card4 -->
+        <div class="grid-item">
+          <div class="item-heading">Year 1 Website Project</div>
+          <div class="desc">
+            A Website using modern technologies, about A.I.
+          </div>
+          <div class="languages-used">Languages used:</div>
+          <div class="languages">HTML 5 | CSS 3 | Javascript | jQuery</div>
+          <div class="links">
+            <a
+              rel="noopener"
+              target="_blank"
+              href="https://github.com/arshad-shah/Year-1-Web-Dev-Project.git"
+              ><i data-feather="github"></i
+            ></a>
+            <a href="Assets\site\index.html">
+              <i data-feather="external-link"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- card5 -->
+        <div class="grid-item">
+          <div class="item-heading">School Exercises Year 1</div>
+          <div class="desc">
+            All the Exercises from college during Module Web Development 1
+          </div>
+          <div class="languages-used">Languages used:</div>
+          <div class="languages">HTML 5 | CSS 3 | Javascript</div>
+          <div class="links">
+            <a
+              rel="noopener"
+              target="_blank"
+              href="https://github.com/arshad-shah/year-1-Web-Dev-1-Sites.git"
+              ><i data-feather="github"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- card6 -->
+        <div class="grid-item">
+          <div class="item-heading">School Exercises Year 2</div>
+          <div class="desc">
+            All the Exercises from college during Module Web Development 2
+          </div>
+          <div class="languages-used">Languages used:</div>
+          <div class="languages">HTML 5 | CSS 3 | Javascript | PHP | MySQL</div>
+          <div class="links">
+            <a
+              rel="noopener"
+              target="_blank"
+              href="https://github.com/arshad-shah/web_exercises_year2.git"
+              ><i data-feather="github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end of main page content homepage-->
+
+    <!-- footer of the page -->
+    <footer>
+      <h4>
+        &copy; 2021 Designed and Created by Arshad Shah <br />
+        V1.8 09/June/2021
+      </h4>
+      <!-- social links -->
+      <div class="sociallinksfooter">
+        <a rel="noopener" target="_blank" href="https://github.com/arshad-shah">
+          <i data-feather="github"></i>
+        </a>
+        <a
+          rel="noopener"
+          target="_blank"
+          href="https://www.linkedin.com/in/arshadshah"
+        >
+          <i data-feather="linkedin"></i>
+        </a>
+        <a
+          rel="noopener"
+          target="_blank"
+          href="mailto:Shaharshad1999@outlook.com"
+        >
+          <i data-feather="mail"></i>
+        </a>
+      </div>
+
+      <h5>
+        Google Play and the Google Play logo are trademarks of Google LLC.
+      </h5>
+    </footer>
+
+    <!-- feather icons  -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+  <!--end of body section-->
+</html>
+<!--end of main page-->

@@ -1,0 +1,972 @@
+/* Author: Arshad shah  */
+
+/* icon design */
+svg {
+  width: 25px;
+  height: 25px;
+  fill: none;
+  stroke: currentcolor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/*Start of main body design*/
+/******************************************************************************/
+/*body tag universal design*/
+body {
+  font-family: "Ruda", sans-serif;
+  background: #e5e5e5;
+  color: #000000;
+}
+
+/* all the links in the site */
+body a {
+  transition: all 0.3s;
+}
+
+/* scroll up button */
+#scroll {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: #585858;
+  text-indent: -9999px;
+  display: none;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+}
+#scroll span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -8px;
+  margin-top: -12px;
+  height: 0;
+  width: 0;
+  border: 8px solid transparent;
+  border-bottom-color: #ffffff;
+}
+#scroll:hover {
+  background-color: #000000;
+  opacity: 1;
+  filter: "alpha(opacity=100)";
+  -ms-filter: "alpha(opacity=100)";
+}
+
+/* header */
+.header {
+  background-color: black; /* Black background color */
+  position: fixed;
+  top: 0;
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  font-size: 18px;
+}
+
+/* website logo */
+.nameAndLogo img {
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+
+/* navbar */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+}
+
+.hamburger {
+  display: none;
+}
+
+.menu-title {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
+}
+
+.nav-item a {
+  margin-left: 5rem;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.nav-item a:hover {
+  color: #0026ff;
+  background-color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.425);
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: #000000;
+    opacity: 1;
+    width: auto;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.425);
+  }
+
+  .nav-menu.active {
+    right: 0px;
+  }
+
+  .nav-item {
+    margin: 20px;
+  }
+  .nav-item a {
+    margin: 0;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #ffffff;
+  }
+
+  .nav-item a:hover {
+    color: #0026ff;
+    background-color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.425);
+  }
+
+  .mobile-menu {
+    display: flex;
+    border: 1px dashed #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    align-items: center;
+  }
+
+  .mobile-menu:hover {
+    cursor: pointer;
+    border-color: #0026ff;
+    background-color: #ffffff;
+    color: #0026ff;
+  }
+
+  .mobile-menu:hover .menu-title {
+    cursor: pointer;
+    border-color: #0026ff;
+    color: #0026ff;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .mobile-menu:hover .bar {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #0026ff;
+  }
+
+  .menu-title {
+    color: #ffffff;
+    padding: 5px;
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+/* Hero text alignment */
+.landingPagetext {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.mainText {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* main container with the content in hero */
+.content {
+  color: #ffffff;
+}
+.content h1 {
+  font-size: 150px;
+  font-variant: small-caps;
+}
+.content h4 {
+  font-size: 30px;
+  font-variant: small-caps;
+}
+.content h6 {
+  font-size: 50px;
+  font-variant: small-caps;
+}
+
+/* social profile links on top */
+.social {
+  margin: 30px;
+}
+.social a:link {
+  width: 5vw;
+  height: 2vw;
+  color: #ffffff;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+.social a:visited {
+  background-color: transparent;
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.social a:hover {
+  color: #0026ff;
+  opacity: 1;
+}
+
+/* Scroll down button */
+
+.scrollDown {
+  margin: 10px;
+}
+.scrollDown svg {
+  width: 40px;
+  height: 40px;
+  fill: none;
+  stroke: currentcolor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.scrollDown a:link {
+  width: 5vw;
+  height: 2vw;
+  color: #ffffff;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+.scrollDown a:visited {
+  background-color: transparent;
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.scrollDown a:hover {
+  color: #0026ff;
+  opacity: 1;
+}
+
+/* Introduction aboutme */
+.aboutme {
+  max-width: 1176px;
+  margin: auto;
+  padding: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background: #ffffff;
+  color: #000000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.aboutme h3 {
+  padding: 10px;
+}
+.aboutme h1 {
+  font-variant: small-caps;
+  text-align: center;
+  font-size: 100px;
+}
+
+.row {
+  display: flex;
+}
+
+/* my picture */
+.picture {
+  display: flex;
+  flex: 50%;
+  padding: 20px;
+  margin: auto;
+}
+.picture img {
+  float: left;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+/* Intro text */
+.mainPageText {
+  flex: 50%;
+  padding: 10px;
+  float: left;
+  font-size: 18px;
+}
+
+.mainPageText a:link {
+  color: black;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+.mainPageText a:visited {
+  color: black;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+.mainPageText a:hover {
+  color: #0026ff;
+  box-shadow: #000000 5px 5px;
+}
+
+/* projects section */
+
+.projects {
+  max-width: 1176px;
+  margin: auto;
+  padding: 30px;
+  margin-bottom: 10px;
+  background: #ffffff;
+  color: #000000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.projects h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* cards for projects display */
+
+.grid-container {
+  display: flex;
+  background-color: transparent;
+  padding: 10px;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+}
+.grid-item {
+  flex: 1;
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.item-heading {
+  margin: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.languages-used {
+  margin: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.languages {
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.grid-item a:link {
+  color: black;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+.grid-item a:visited {
+  color: black;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+.grid-item a:hover {
+  color: #0026ff;
+}
+
+.desc {
+  font-size: 18px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.links {
+  margin: 10px;
+  text-align: center;
+}
+.links img {
+  width: 100%;
+  height: 100%;
+}
+
+/*footer*/
+footer {
+  font-size: 18px;
+  text-align: center;
+  padding: 20px;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* bottom socila profiles links */
+footer a:link {
+  font-size: 40px;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+footer a:visited {
+  color: #ffffff;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+footer a:hover {
+  color: #0026ff;
+}
+
+/*end of website design*/
+/******************************************************************************/
+
+/* media queries */
+/* On screens that are 1024px or less */
+@media screen and (max-width: 1024px) {
+  /* row for intro */
+  .row {
+    flex-direction: column;
+  }
+
+  /* icon design */
+  svg {
+    width: 25px;
+    height: 25px;
+    fill: none;
+    stroke: currentcolor;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  /* my picture */
+  .picture {
+    display: flex;
+    flex: 50%;
+    padding: 20px;
+    margin: auto;
+    justify-content: space-evenly;
+  }
+  .picture img {
+    float: left;
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
+  }
+
+  /* Scroll down button */
+  .scrollDown {
+    margin: 10px;
+  }
+  .scrollDown svg {
+    width: 40px;
+    height: 40px;
+    fill: none;
+    stroke: currentcolor;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .scrollDown a:link {
+    width: 100px;
+    height: 30px;
+    color: #ffffff;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  .scrollDown a:visited {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .scrollDown a:hover {
+    color: #0026ff;
+    opacity: 1;
+  }
+
+  /* projects section */
+
+  .projects {
+    max-width: 1176px;
+    margin: auto;
+    padding: 30px;
+    margin-bottom: 10px;
+    background: transparent;
+    background: #ffffff;
+    color: #000000;
+  }
+  .projects h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+/* end of media queries for 1024 or less*/
+
+/* **************************************************************************************************************************** */
+/* On screens that are 768 or less */
+@media screen and (max-width: 768px) {
+  /* row for intro */
+  .row {
+    flex-direction: column;
+  }
+
+  /* icon design */
+  svg {
+    width: 25px;
+    height: 25px;
+    fill: none;
+    stroke: currentcolor;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  /* Hero text alignement */
+  .landingPagetext {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../images/backgroundmobile.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .mainText {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* main container with the content in hero */
+  .content {
+    color: #ffffff;
+  }
+  .content h1 {
+    font-size: 70px;
+    font-variant: small-caps;
+  }
+  .content h4 {
+    font-size: 20px;
+    font-variant: small-caps;
+  }
+  .content h6 {
+    font-size: 20px;
+    font-variant: small-caps;
+  }
+
+  /* social profile links on top */
+  .social {
+    margin: 30px;
+  }
+  .social a:link {
+    width: 50px;
+    height: 50px;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  .social a:visited {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .social a:hover {
+    color: #0026ff;
+    opacity: 1;
+  }
+
+  /* Scroll down button */
+  .scrollDown {
+    margin: 10px;
+  }
+  .scrollDown svg {
+    width: 40px;
+    height: 40px;
+    fill: none;
+    stroke: currentcolor;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .scrollDown a:link {
+    width: 100px;
+    height: 30px;
+    color: #ffffff;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  .scrollDown a:visited {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .scrollDown a:hover {
+    color: #0026ff;
+    opacity: 1;
+  }
+
+  /* Introduction aboutme */
+  .aboutme {
+    max-width: 1176px;
+    margin: auto;
+    padding: 30px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    background: #ffffff;
+    color: #000000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+
+  .aboutme h3 {
+    padding: 10px;
+  }
+  .aboutme h1 {
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 70px;
+  }
+
+  /* projects section */
+
+  .projects {
+    max-width: 1176px;
+    margin: auto;
+    padding: 30px;
+    margin-bottom: 10px;
+    background: transparent;
+    background: #ffffff;
+    color: #000000;
+  }
+  .projects h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+/* end of 768 or less */
+
+/* **************************************************************************************************************************** */
+/* On screens that are 425px or less */
+@media screen and (max-width: 600px) {
+  /* row for intro */
+  .row {
+    flex-direction: column;
+  }
+
+  /* icon design */
+  svg {
+    width: 25px;
+    height: 25px;
+    fill: none;
+    stroke: currentcolor;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  /* Hero text alignement */
+  .landingPagetext {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../images/backgroundmobile.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .mainText {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* main container with the content in hero */
+  .content {
+    color: #ffffff;
+  }
+  .content h1 {
+    font-size: 50px;
+    font-variant: small-caps;
+  }
+  .content h4 {
+    font-size: 15px;
+    font-variant: small-caps;
+  }
+  .content h6 {
+    font-size: 15px;
+    font-variant: small-caps;
+  }
+
+  /* social profile links on top */
+  .social {
+    margin: 30px;
+  }
+  .social a:link {
+    width: 50px;
+    height: 50px;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  .social a:visited {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .social a:hover {
+    color: #0026ff;
+    opacity: 1;
+  }
+
+  /* Scroll down button */
+  .scrollDown {
+    margin: 10px;
+  }
+  .scrollDown svg {
+    width: 40px;
+    height: 40px;
+    fill: none;
+    stroke: currentcolor;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .scrollDown a:link {
+    width: 100px;
+    height: 30px;
+    color: #ffffff;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  .scrollDown a:visited {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .scrollDown a:hover {
+    color: #0026ff;
+    opacity: 1;
+  }
+
+  /* Introduction aboutme */
+  .aboutme {
+    max-width: 1176px;
+    margin: auto;
+    padding: 30px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    color: #000000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+
+  .aboutme h3 {
+    padding: 10px;
+  }
+  .aboutme h1 {
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 70px;
+  }
+
+  /* my picture */
+  .picture {
+    display: flex;
+    flex: 50%;
+    padding: 20px;
+    margin: auto;
+    justify-content: space-evenly;
+  }
+  .picture img {
+    float: left;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* projects section */
+
+  .projects {
+    max-width: 1176px;
+    margin: auto;
+    padding: 30px;
+    margin-bottom: 10px;
+    background: transparent;
+    background: #ffffff;
+    color: #000000;
+  }
+  .projects h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+/* end of 425 or less */
+/******************************************************************************/
+/*end of css*/

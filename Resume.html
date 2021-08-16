@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<!-- Author: Arshad shah -->
+
+<!--Start of page-->
+
+<html lang="en">
+  <!--start of head-->
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--google verification-->
+    <meta
+      name="google-site-verification"
+      content="vxNkAGUTtzyvkugZFN_HhgOJwIo-J7RnNqIa1bR_rvs"
+    />
+
+    <!--Theme color meta tag-->
+    <meta name="theme-color" content="#000000" />
+
+    <!-- classification -->
+    <meta name="Classification" content="Resume" />
+
+    <!-- coverage -->
+    <meta name="coverage" content="Worldwide" />
+    <meta name="distribution" content="Global" />
+
+    <!-- metadata -->
+    <meta
+      name="keywords"
+      content="Arshad shah,arshad shah, arshad,shah, tudublin, college, Software Engineer, website developer, Portfolio"
+    />
+    <meta
+      name="description"
+      content="Arshad shah is a Computer science student who likes to build and design stuff in code for Mobile, Web, Desktop."
+    />
+
+    <!-- owner -->
+    <meta name="author" content="Arshad Shah" />
+    <meta name="owner" content="Arshad Shah" />
+    <meta name="designer" content="Arshad Shah" />
+
+    <!-- robot -->
+    <meta name="robots" content="index,follow" />
+
+    <!-- revised -->
+    <meta name="revised" content="Wednesday, June 9th, 2021, 1:00 pm" />
+
+    <!--favicon for browser tab-->
+    <link rel="icon" href="Assets/images/logo.svg" type="image/x-icon" />
+
+    <link rel="shortcut icon" href="Assets/images/logo.svg" />
+
+    <title>Arshad shah - Resume</title>
+
+    <!--normal handmade style sheet for website design-->
+    <link rel="stylesheet" href="Assets/css/resume-styles.css" />
+
+    <!--imported stylesheet for icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!--imported style sheet for the font styling of the web page-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Ruda&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--back to top script-->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- jsPDF library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+
+    <!-- personal scripts -->
+    <script src="./Assets/js-scripts/smoothScroller.js"></script>
+    <script src="./Assets/js-scripts/back-to-top.js"></script>
+    <script src="./Assets/js-scripts/opacity-animation.js"></script>
+    <script type="text/javascript" src="./Assets/js-scripts/logic.js"></script>
+  </head>
+  <!--end of Head section-->
+
+  <!--start of body section-->
+
+  <body>
+    <!--start of header-->
+    <a href="#" id="scroll" style="display: none"><span></span></a>
+
+    <header class="resume-page-header" id="header">
+      <nav class="navbar">
+        <div class="nameAndLogo">
+          <img src="Assets/images/logo.svg" alt="Website logo" />
+        </div>
+
+        <div class="main-nav">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="generatePDF()">Dowload PDF</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!--end of Header-->
+    <div class="canvas" id="page">
+      <div class="resume">
+        <section class="resume-header">
+          <div class="Heading">
+            <div class="name-title">Arshad shah</div>
+            <div class="currentProfession">Bachelor Student</div>
+            <div class="name-title-desc">
+              A Bachelor Student with experience in Cross Platform Front End
+              Software development.
+            </div>
+          </div>
+          <div class="header-sociallinks">
+            <ul class="sociallinks">
+              <li class="link">
+                <a
+                  rel="noopener"
+                  target="_blank"
+                  href="mailto:Shaharshad1999@outlook.com"
+                >
+                  shaharshad1999@outlook.com <i data-feather="mail"></i>
+                </a>
+              </li>
+              <li class="link">
+                089 973 7793
+                <i data-feather="phone"></i>
+              </li>
+              <li class="link">
+                Portlaoise, laois
+                <i data-feather="map-pin"></i>
+              </li>
+              <li class="link">
+                <a href="https://arshad-shah.github.io/"
+                  >arshad-shah.github.io <i data-feather="globe"></i
+                ></a>
+              </li>
+              <li class="link">
+                <a
+                  rel="noopener"
+                  target="_blank"
+                  href="https://www.linkedin.com/in/arshadshah"
+                >
+                  linkedin.com/in/arshadshah <i data-feather="linkedin"></i>
+                </a>
+              </li>
+              <li class="link">
+                <a
+                  rel="noopener"
+                  target="_blank"
+                  href="https://github.com/arshad-shah"
+                >
+                  github.com/arshad-shah <i data-feather="github"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="container">
+          <div class="education-skills-title">
+            <div class="education-title">EDUCATION:</div>
+
+            <div class="skill-title">SKILLS:</div>
+          </div>
+          <div class="row">
+            <div class="education">
+              <div class="education-item">
+                <div class="education-heading">BSc in Computer Science</div>
+                <div class="institution">Technological University Dublin</div>
+                <div class="dates">08/2019 - PRESENT</div>
+                <div class="location">IRELAND</div>
+              </div>
+
+              <div class="education-item">
+                <div class="education-heading">
+                  QQI level 5 in Computer Science
+                </div>
+                <div class="institution">Portlaoise</div>
+                <div class="dates">08/2018 - 08/2019</div>
+                <div class="location">IRELAND</div>
+              </div>
+            </div>
+
+            <div class="skills">
+              <div class="skill-pill">HTML5</div>
+              <div class="skill-pill">CSS3</div>
+              <div class="skill-pill">JAVA</div>
+              <div class="skill-pill">Python</div>
+              <div class="skill-pill">PHP</div>
+              <div class="skill-pill">MYSQL</div>
+              <div class="skill-pill">C/C++</div>
+              <div class="skill-pill">Kotlin</div>
+              <div class="skill-pill">Javascript</div>
+              <div class="skill-pill">React</div>
+              <div class="skill-pill">Team Work</div>
+              <div class="skill-pill">Interpersonal</div>
+              <div class="skill-pill">Time Management</div>
+              <div class="skill-pill">Attention to Detail</div>
+              <div class="skill-pill">Adaptability</div>
+              <div class="skill-pill">Problem-Solving</div>
+              <div class="skill-pill">Work Ethic</div>
+              <div class="skill-pill">Communication</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="container">
+          <div class="education-skills-title">
+            <div class="education-title">WORK EXPERIENCE:</div>
+
+            <div class="skill-title">PERSONAL PROJECTS:</div>
+          </div>
+          <div class="row">
+            <div class="work-experience">
+              <div class="work">
+                <div class="work-item">
+                  <div class="work-heading">Software Engineer - Intern</div>
+                  <div class="workplace">
+                    Houghton Mifflin Harcourt - Dublin
+                  </div>
+                  <div class="responsibility">
+                    As part of this internship i worked on HMH flagship product.
+                    <br />
+                    <strong>HMH ED</strong>
+                    <br />
+                    i worked on bug fixes, improvements to the system and
+                    implementing new features, writing integration, and unit
+                    test using jest, during the busy time of there back to
+                    school release of HMH ED, while collaborating with across
+                    the engineering teams to ensure good quality code is
+                    delivered to production.
+                  </div>
+                  <div class="dates">06/2021 - 08/2021</div>
+                  <div class="location">IRELAND</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="personal-projects">
+              <div class="project-item">
+                <div class="project-title">Portfolio Website</div>
+                <div class="project-desc">
+                  A Personal Website Showcasing my Projects throughout college.
+                </div>
+                <div class="project-link">
+                  -
+                  <a
+                    href="https://github.com/arshad-shah/arshad-shah.github.io"
+                  >
+                    https://github.com/arshad-shah/arshad-shah.github.io
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-item">
+                <div class="project-title">Nimaz (Prayer Times App)</div>
+                <div class="project-desc">
+                  An Android App written in Kotlin, it uses mathematical
+                  Calculation to determine the position of the sun for muslim
+                  prayer times based on the location of the user.
+                </div>
+                <div class="project-link">
+                  - It is available on google play as Nimaz.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="container">
+          <div class="education-skills-title">
+            <div class="education-title">LANGUAGES:</div>
+
+            <div class="skill-title">INTERESTS:</div>
+          </div>
+          <div class="row">
+            <div class="languages-spoken">
+              <div class="languages-pill">
+                English
+                <div>Full Professional Proficiency</div>
+              </div>
+              <div class="languages-pill">
+                Urdu
+                <div>Full Professional Proficiency</div>
+              </div>
+              <div class="languages-pill">
+                Pashto
+                <div>Native Proficiency</div>
+              </div>
+            </div>
+            <div class="interests">
+              <div class="interests-pill">Reading</div>
+              <div class="interests-pill">Programming</div>
+              <div class="interests-pill">Machine Learning</div>
+              <div class="interests-pill">Learning New Skills</div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!--end of main page content homepage-->
+
+    <!-- footer of the page -->
+    <footer>
+      <h4>
+        &copy; 2021 Designed and Created by Arshad Shah <br />
+        V1.8 09/June/2021
+      </h4>
+      <!-- social links -->
+      <div class="sociallinksfooter">
+        <a rel="noopener" target="_blank" href="https://github.com/arshad-shah">
+          <i data-feather="github"></i>
+        </a>
+        <a
+          rel="noopener"
+          target="_blank"
+          href="https://www.linkedin.com/in/arshadshah"
+        >
+          <i data-feather="linkedin"></i>
+        </a>
+        <a
+          rel="noopener"
+          target="_blank"
+          href="mailto:Shaharshad1999@outlook.com"
+        >
+          <i data-feather="mail"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- feather icons  -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+  <!--end of body section-->
+</html>
+<!--end of main page-->

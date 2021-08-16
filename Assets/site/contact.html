@@ -1,0 +1,136 @@
+<!doctype html>
+<!-- Author : Arshad shah -->
+<!--Start of page-->
+<html>
+  <!--start of head-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact </title>
+    <!--script to validate form-->
+    <script src="Assets/scripts/form_validator.js" type="text/javascript"></script>
+
+    <!--favicon for browser tab-->
+    <link rel='icon' href='Assets/images/favicon.png' type='image/x-icon'/ >
+
+    <title> homepage </title>
+    <!--normal handmade style sheet for website design-->
+    <link rel="stylesheet" href="Assets/css/style.css">
+
+    <!--imported stylesheet for icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--imported style sheet for the font styling of the web page-->
+    <link href="https://fonts.googleapis.com/css?family=Ruda&display=swap" rel="stylesheet">
+
+    <!--imported style sheet for the back to top button styling of the web page-->
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <!--javascript for menu toggle-->
+    <script src="Assets/scripts/menu_design.js"></script>
+
+    <!--back to top script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Assets/scripts/back_to_top.js"></script>
+
+  </head>
+  <!--end of Head section-->
+
+  <!--start of body section-->
+  <body>
+
+    <!--start of header-->
+    <header>
+      <aside class="logo">
+          <img src="Assets/images/logo.png" alt="website logo">
+      </aside>
+      <h1>Artificial Intelligence</h1>
+    </header>
+    <!--end of Header-->
+
+
+    <!--menu toggle-->
+    <!-- Top Navigation Menu -->
+      <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active"><i class="fa fa-home"></i>Home</a>
+          <a href="benefits.html">Benefits</a>
+          <a href="dangers.html">Dangers </a>
+          <a href="development.html"> Development</a>
+          <a href="contact.html"> <i class="fa fa-envelope"></i> Contact Us</a>
+          <a href="https://arshad-shah.github.io"> Go back to main site</a>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>
+      </div>
+    <!--end of menu toggle-->
+
+    <!--about me section of the page-->
+    <section>
+      <article class="about">
+        <p>
+            I am a Computer Science Graduate, Learning the ropes.
+            <br>
+            This is one of my first websites <strong> <u> EVER </u></strong>.
+            <br>
+            so if you do find anything that comes as bad.
+            <br>
+            Please cut me some slack.
+            <br>
+            I am learning, and will appreciate good resources to learn from.
+            <br>
+            <strong>THANK YOU</strong>
+        </p>
+
+      </article>
+    </section>
+
+
+    <!--html form element-->
+    <form class="form-style-7" name="contact" onsubmit="return validateForm()" novalidate>
+      <h1>Contact Us</h1>
+      <ul>
+      <li>
+          <label for="name">Name</label>
+          <input type="text" name="name" maxlength="100">
+          <span>Enter your full name here</span>
+          <div class="error" id="nameErr"></div>
+      </li>
+      <li>
+        <label for="radio">Gender</label>
+        <input type="radio" name="gender" value="male"> <h6> Male </h6>
+        <br>
+        <input type="radio" name="gender" value="female"> <h6> Female </h6>
+        <span>Please select your Gender</span>
+        <div class="error" id="genderErr"></div>
+      </li>
+      <li>
+          <label for="email">Email</label>
+          <input type="email" name="email" maxlength="100">
+          <span>Enter your email address (example@hotmail.com)</span>
+          <div class="error" id="emailErr"></div>
+      </li>
+      <li>
+          <label for="number">Phone Number</label>
+          <input type="number" name="number" maxlength="100">
+          <span>Please enter phone number (0899123456)</span>
+          <div class="error" id="numberErr"></div>
+      </li>
+      <li>
+          <label for="bio">Suggestion</label>
+          <textarea name="bio" onkeyup="adjust_textarea(this)"></textarea>
+          <span>Explain in your own words</span>
+          <div class="error" id="enquiryErr"></div>
+      </li>
+      <li>
+          <input type="submit" value="Submit" >
+          <input type="reset">
+      </li>
+      </ul>
+      </form>
+
+      <!--footer of the page-->
+      <footer> <h4>&copy; 2019 by  <strong> Arshad Shah </strong></h4><h6>shaharshad57@gmail.com</h6></footer>
+
+  </body>
+  <!--end of body section-->
+</html>
+<!--end of main page-->
