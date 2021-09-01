@@ -204,6 +204,12 @@ a {
     align-items: center;
   }
 
+  .mobile-menu:link {
+    cursor: pointer;
+    border-color: #000000;
+    background-color: #ffffff;
+    color: #000000;
+  }
   .mobile-menu:hover {
     cursor: pointer;
     border-color: #0026ff;
